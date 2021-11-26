@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Mukta:wght@200;300;400;500&display=swap');
+
+body{
+    font-family: 'Mukta', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Lora', serif;
+}
+body{
+    padding: 1rem 3rem;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: royalblue;
+}
+body > nav › a{
+    font-size: xx-large;
+}
+section{
+    padding: 2rem 0;
+}
+#apresentacao > div > h3{
+    Font-size: X-large;
+}
+
+@media (max-width: 769px) {
+    /*MOBILE*/
+    nav{
+        text-align: center;
+    }
+    body > nav > div{
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+    #apresentacao{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 769px) {
+    /*PC*/
+    nav{
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+
+    }
+    body > nav > div > a:nth-child(2){
+        margin: 0 0.5rem;
+    }
+    #apresentacao{
+        display: flex;
+        justify-content: space-between;
+    }
+    #apresentacao > div{
+        width: 50%;
+        text-align: end;
+    }
+}
