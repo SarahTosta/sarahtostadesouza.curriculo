@@ -1,64 +1,71 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&family=Mukta:wght@200;300;400;500&display=swap');
 
 body{
-    font-family: 'Mukta', sans-serif;
-}
-h1,h2,h3,h4,h5,h6{
-    font-family: 'Lora', serif;
-}
-body{
     padding: 1rem 3rem;
+    font-family: 'Lora', serif;
+    color: darkblue;
+    background-color: rebeccapurple;
+}
+#apresentacao > img{
+    width: 200px;
+    border-radius: 50%;
+}
+#apresentacao > div{
+    width: 50%;
 }
 a{
     text-decoration: none;
 }
-a:hover{
-    color: royalblue;
+body > nav > a{
+    font-size: x-large;
 }
-body > nav › a{
-    font-size: xx-large;
-}
-section{
-    padding: 2rem 0;
-}
-#apresentacao > div > h3{
-    Font-size: X-large;
+.sem-serifa{
+    font-family: 'Mukta', sans-serif;
+    color: #003566;
 }
 
-@media (max-width: 769px) {
-    /*MOBILE*/
+
+@media (min-width: 768px) {
+    
+    
     nav{
-        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10rem;
+    }
+    body > nav > div > a{
+        padding: 0 0.3rem;
+    }
+    #apresentacao {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+
+@media (max-width: 768px) {
+    
+    nav{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 8rem;
     }
     body > nav > div{
         display: flex;
+        align-items: center;
         flex-direction: column;
-        margin-top: 1rem;
+        margin-top: 2rem;
     }
-    #apresentacao{
+    body > nav > div > a{
+        padding: 0.3rem 0;
+    }
+    #apresentacao {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-}
-
-@media (max-width: 769px) {
-    /*PC*/
-    nav{
-        text-align: center;
-        display: flex;
-        justify-content: space-between;
-
-    }
-    body > nav > div > a:nth-child(2){
-        margin: 0 0.5rem;
-    }
-    #apresentacao{
-        display: flex;
-        justify-content: space-between;
-    }
     #apresentacao > div{
-        width: 50%;
-        text-align: end;
+        text-align: center;
     }
 }
