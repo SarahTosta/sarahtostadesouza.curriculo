@@ -5,53 +5,64 @@
     margin: 0;
     padding: 0;
 }
+
 body{
     padding: 1rem 3rem;
     font-family: 'Lora', serif;
     color: #223B02;
     background-color: #F0F2BA;
 }
+
 #apresentacao > img{
     width: 200px;
     border-radius: 50%;
 }
+
 #apresentacao > div{
     width: 50%;
 }
+
 a{
     text-decoration: none;
 }
+
 body > nav > a{
     font-size: x-large;
 }
+
 .sem-serifa{
     font-family: 'Mukta', sans-serif;
     color: #223B02;
 }
+
 .centralizar-total{
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 #objetivos{
     margin-top: 4rem;
 }
+
 .carrosel{
     width: 350px;
     height: 250px;
     overflow: hidden;
 }
+
 .carrosel > ul{
     list-style: none;
     display: flex;
     width: 1050px;
-    height: 250px;
-    
+    height: 250px;   
 }
+
 .carrosel-item{
     width: 350px;
     height: 250px;
 }
+
 .carrosel > ul >li{
     position: relative;
     animation: slides 15s infinite ease-out;
@@ -61,6 +72,7 @@ body > nav > a{
     20%{left: 0;}
     30%{left: -350px;}
     60%{left: -350px;}
+    80%{left: -700px;}
     90%{left: -700px;}
     100%{left: 0px;}
 }
@@ -70,18 +82,18 @@ body > nav > a{
     flex-direction: column;
 }
 #tecnologias > div > img{
-    margin: 1rem;
+    margin: 2rem;
 }
 #tecnologias > h2{
     margin-bottom: 8rem;
 }
 .flexor{
-    display:flex;
     flex-wrap: wrap;
 }
+
+
 @media (min-width: 768px) {
-    
-    
+    /*computador*/
     nav{
         display: flex;
         justify-content: space-between;
@@ -98,7 +110,7 @@ body > nav > a{
 
 
 @media (max-width: 768px) {
-    
+    /*celular*/
     nav{
         display: flex;
         align-items: center;
