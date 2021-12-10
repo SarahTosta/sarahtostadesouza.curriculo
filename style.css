@@ -90,8 +90,30 @@ body > nav > a{
 .flexor{
     flex-wrap: wrap;
 }
-
-
+#experiencia{
+    display: flex;
+    flex-direction: column;
+}
+.item-exp{
+    margin-bottom: 2rem;
+}
+#experiencia > h2:nth-child(3){
+    margin-top: 1.5rem;
+}
+footer{
+    height: 6rem;
+}
+footer > div > a > img{
+    width: 25px;
+} 
+footer > div{
+    display: flex;
+    justify-content: space-evenly;
+    width: 20rem;
+}
+body > footer > p{
+    margin-top: 1rem;
+}
 @media (min-width: 768px) {
     /*computador*/
     nav{
@@ -105,6 +127,22 @@ body > nav > a{
     #apresentacao {
         display: flex;
         justify-content: space-evenly;
+    }
+    #apresentacao > div{
+        width: 50%;
+        text-align: end;
+    }
+    #tecnologias{
+        display: flex;
+        flex-direction: column;
+        padding: o 2rem;
+    }
+    .item-exp{
+        display: flex;
+        justify-content: space-between;
+    }
+    .exp-bot{
+        width: 60%;
     }
 }
 
@@ -136,5 +174,8 @@ body > nav > a{
     }
     #apresentacao > div{
         text-align: center;
+    }
+    .exp-top{
+        margin-bottom: 0.5rem;
     }
 }
